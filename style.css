@@ -4,7 +4,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
 }
 span.average-font {
     font-family: 'Average', serif;
@@ -36,37 +36,13 @@ span.libre-font {
     color: #CF3721;
 }
 
-div.half-left {
-    top: -10px;
-    left: -10px;
-    margin: 0px;
-    width: 50vw;
-    float: left;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
-}
-
-div.half-right {
-    width: 50vw;
-    float: right;
-    height: 100vh;
-    display: flex;
-    display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
-    align-content: center;
-    align-items: center;
-}
-
 #name-statement {
-    font-size: 100px;
+    font-size: 60px;
     align-self: center;
 }
 
 #name-statement > span {
-    font-size: 140px;
+    font-size: 100px;
     letter-spacing: 10px;
 }
 
@@ -82,9 +58,16 @@ div.half-right {
     margin: 10px;
 }
 
+#job-statement {
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+}
+
 ul {
-    margin: 0px;
+    margin: 0px 0px 50px 0px;
     padding: 0px;
+
 }
 
 ul > li:first-child {
@@ -97,4 +80,71 @@ ul, li {
     text-align: center;
     margin: none;
     padding: none;
+}
+
+@media screen and (min-width:769px) {
+
+    div.first-half {
+        top: -10px;
+        left: -10px;
+        margin: 0px;
+        width: 50vw;
+        float: left;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+
+    div.second-half {
+        width: 50vw;
+        float: right;
+        height: 100vh;
+        display: flex;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    div.second-half > img {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    body {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    div.first-half {
+        top: -10px;
+        left: -10px;
+        margin: 0px;
+        width: 100vh;
+        height: 1000px;
+        padding: 20px 0px 20px 0px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+
+    div.second-half {
+        width: 100vh;
+        height: 600px;
+        display: flex;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    div.second-half > img {
+        width: 90vw;
+    }
 }
